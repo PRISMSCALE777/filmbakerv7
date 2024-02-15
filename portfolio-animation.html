@@ -21,9 +21,9 @@
 		WebFont.load({
 			google: {
 				families: [
-					"Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
-					"Inconsolata:400,700",
-					"Poppins:200,300,regular,500,600,700,800,900",
+					'Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic',
+					'Inconsolata:400,700',
+					'Poppins:200,300,regular,500,600,700,800,900',
 				],
 			},
 		});
@@ -32,10 +32,11 @@
 	<script type="text/javascript">
 		!(function (o, c) {
 			var n = c.documentElement,
-				t = " w-mod-";
-			(n.className += t + "js"),
-				("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) &&
-				(n.className += t + "touch");
+				t = ' w-mod-';
+			(n.className += t + 'js'),
+				('ontouchstart' in o ||
+					(o.DocumentTouch && c instanceof DocumentTouch)) &&
+				(n.className += t + 'touch');
 		})(window, document);
 	</script>
 	<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
@@ -45,23 +46,30 @@
 		!(function (f, b, e, v, n, t, s) {
 			if (f.fbq) return;
 			n = f.fbq = function () {
-				n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+				n.callMethod
+					? n.callMethod.apply(n, arguments)
+					: n.queue.push(arguments);
 			};
 			if (!f._fbq) f._fbq = n;
 			n.push = n;
 			n.loaded = !0;
-			n.version = "2.0";
-			n.agent = "plwebflow";
+			n.version = '2.0';
+			n.agent = 'plwebflow';
 			n.queue = [];
 			t = b.createElement(e);
 			t.async = !0;
 			t.src = v;
 			s = b.getElementsByTagName(e)[0];
 			s.parentNode.insertBefore(t, s);
-		})(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-		fbq("consent", "revoke");
-		fbq("init", "618533339039706");
-		fbq("track", "PageView");
+		})(
+			window,
+			document,
+			'script',
+			'https://connect.facebook.net/en_US/fbevents.js'
+		);
+		fbq('consent', 'revoke');
+		fbq('init', '618533339039706');
+		fbq('track', 'PageView');
 	</script>
 	<style>
 		body .page-transition {
@@ -207,14 +215,14 @@
 				</div>
 				<div class="category-subtitle">
 					<p data-w-id="97d3b1fd-9ec7-9990-6184-92f5042009f4" style="
-								opacity: 1;
-								transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-									rotateZ(0deg) skew(0deg, 0deg);
-								transform-style: preserve-3d;
-							" class="paragraph-10">
-						Filmbaker’s video animation service perfectly narrates complex messages. Palatable to
-						all audiences across social media platforms, websites, and all domains of
-						communication.
+		                opacity: 1;
+		                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+		                  rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+		                transform-style: preserve-3d;
+		              " class="paragraph-10">
+						Filmbaker’s video animation service perfectly narrates complex
+						messages. Palatable to all audiences across social media
+						platforms, websites, and all domains of communication.
 					</p>
 				</div>
 			</div>
@@ -259,7 +267,7 @@
 							<a class="text-block-67 link-portfolio_animation"> Animation Videos</a>
 						</div>
 						<div role="listitem" class="w-dyn-item">
-							<a href="portfolio-events.html" class="text-block-67 link-portfolio_events">Events Aftermovie</a>
+							<a class="text-block-67 link-portfolio_events">Events Aftermovie</a>
 						</div>
 						<div role="listitem" class="w-dyn-item">
 							<a class="text-block-67 link-portfolio_corporate">Corporate Video
@@ -298,1025 +306,944 @@
 							<div class="dropdown-text">Search by category</div>
 						</div>
 						<nav class="dropdown-list-2 w-dropdown-list">
-							<a class="dropdown-link-3 w-dropdown-link link-portfolio">All</a>
-							<a href="/video-category/digital-film-company" class="dropdown-link-3 w-dropdown-link">Digital Films</a>
-							<a href="/video-category/motion-graphics-company" class="dropdown-link-3 w-dropdown-link">Motion
-								Graphics</a>
-							<a href="/video-category/explainer-video-company" class="dropdown-link-3 w-dropdown-link">Explainer</a>
-							<a href="/video-category/animation-company" class="dropdown-link-3 w-dropdown-link">Animation</a>
-							<a href="/video-category/typography-video" class="dropdown-link-3 w-dropdown-link">Typography</a>
-							<a href="/video-category/testimonial-video-services"
-								class="dropdown-link-3 w-dropdown-link">Testimonial</a>
-							<a href="/video-category/events-aftermovie" class="dropdown-link-3 w-dropdown-link">Event Aftermovie</a>
-							<a href="/video-category/corporate-video-production-services"
-								class="dropdown-link-3 w-dropdown-link">Corporate Videos</a>
+							<a aria-current="page" class="dropdown-link-3 w-dropdown-link w--current link-portfolio">All</a>
+							<a class="dropdown-link-3 w-dropdown-link link-portfolio_digital">Digital Films</a>
+							<a class="dropdown-link-3 w-dropdown-link link-portfolio_motion">Motion Graphics</a>
+							<a class="dropdown-link-3 w-dropdown-link link-portfolio_explainer">Explainer</a>
+							<a class="dropdown-link-3 w-dropdown-link link-portfolio_animation">Animation</a>
+							<a class="dropdown-link-3 w-dropdown-link link-portfolio_typography">Typography</a>
+							<a class="dropdown-link-3 w-dropdown-link link-portfolio_testimonial">Testimonial</a>
+							<a class="dropdown-link-3 w-dropdown-link link-portfolio_events">Event Aftermovie</a>
+							<a class="dropdown-link-3 w-dropdown-link link-portfolio_corporate">Corporate Videos</a>
 						</nav>
 					</div>
 				</div>
 			</div>
-			<div class="collection-list-wrapper-6 w-dyn-list">
-				<div role="list" class="collection-list w-dyn-items">
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d18612351ab_image%205-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">App explainer video</h3>
-										<div class="text-block-45">Yamaha</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=fnaObYF0VEg",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FfnaObYF0VEg%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfnaObYF0VEg&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FfnaObYF0VEg%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/fnaObYF0VEg/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+
+			<div role="list" class="collection-list w-dyn-items">
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af8efada1c24bd1d3191f_Bresties-min.jpg"
+									loading="lazy" alt="explainer video maker"
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af8efada1c24bd1d3191f_Bresties-min-p-500.jpg   500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af8efada1c24bd1d3191f_Bresties-min-p-800.jpg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af8efada1c24bd1d3191f_Bresties-min-p-1080.jpg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af8efada1c24bd1d3191f_Bresties-min.jpg        1324w
+			                    " class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Yamaha App explainer video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Breasties App Explainer</h3>
+								<div class="para">Bresties</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d14512351aa_Strata%201-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Explainer animation video</h3>
-										<div class="text-block-45">Strata</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=B7kXgavZqI8",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FB7kXgavZqI8%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DB7kXgavZqI8&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FB7kXgavZqI8%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/B7kXgavZqI8/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://youtu.be/PBHZ2t5woUU",
+			                      "originalUrl": "https://youtu.be/PBHZ2t5woUU",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/PBHZ2t5woUU/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FPBHZ2t5woUU%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DPBHZ2t5woUU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FPBHZ2t5woUU%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2309f96fcd187de49c5f9f_5eafdbe3153c2844756bb608_vlcsnap-2020-04-07-13h27m39s551-min.png"
+									loading="lazy" alt="corporate branding"
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2309f96fcd187de49c5f9f_5eafdbe3153c2844756bb608_vlcsnap-2020-04-07-13h27m39s551-min-p-500.png 500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2309f96fcd187de49c5f9f_5eafdbe3153c2844756bb608_vlcsnap-2020-04-07-13h27m39s551-min.png       960w
+			                    " class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Strata Explainer animation video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">
+									Brand Opening Promotion Motion Graphics Video
+								</h3>
+								<div class="para">Game Theory</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3dee37235207_darwin%20box-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Work From Home</h3>
-										<div class="text-block-45">Darwinbox</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=2mpgU4EIgQU",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F2mpgU4EIgQU%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D2mpgU4EIgQU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F2mpgU4EIgQU%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/2mpgU4EIgQU/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://youtu.be/jttb-DJFVEg",
+			                      "originalUrl": "https://youtu.be/jttb-DJFVEg",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/jttb-DJFVEg/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fjttb-DJFVEg%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Djttb-DJFVEg&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fjttb-DJFVEg%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/65154291e9c0bdc308df22b6_Magic%20edtech%20Nursing%20Care.webp"
+									loading="lazy" alt="" class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Darwinbox Work From Home" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Magic Edtech Pre-Operative Care</h3>
+								<div class="para">Magic Edtech</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d761d235205_spocto-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Introducing Spocto</h3>
-										<div class="text-block-45">Spocto</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=BqH6tZyJ-M8",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FBqH6tZyJ-M8%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBqH6tZyJ-M8&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FBqH6tZyJ-M8%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/BqH6tZyJ-M8/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://youtu.be/-q44bz_xghw",
+			                      "originalUrl": "https://youtu.be/-q44bz_xghw",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/-q44bz_xghw/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F-q44bz_xghw%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-q44bz_xghw&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F-q44bz_xghw%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/6235d0667d9ec248b971bc40_image%205-min.jpg"
+									loading="lazy" alt="Motorcycle ConnectX Explainer" class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Spocto Introducing Spocto" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">App explainer video</h3>
+								<div class="para">Yamaha</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3dc5662351f6_yubi%20-%20lenders-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Lenders Animation Film</h3>
-										<div class="text-block-45">Yubi</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=V_3WuJFZLI0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FV_3WuJFZLI0%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DV_3WuJFZLI0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FV_3WuJFZLI0%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/V_3WuJFZLI0/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=fnaObYF0VEg",
+			                      "originalUrl": "https://www.youtube.com/watch?v=fnaObYF0VEg",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/fnaObYF0VEg/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FfnaObYF0VEg%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfnaObYF0VEg&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FfnaObYF0VEg%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2cf36de22f98861aa76c08_Ballebaazi%20-%20Kabbadi%20Intro-min.jpg"
+									loading="lazy" alt="" class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Yubi Lenders Animation Film" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Kabbadi Intro</h3>
+								<div class="para">Ballebaazi</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d4cc12351fb_yubi%20-%20originator-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Yubi Originator</h3>
-										<div class="text-block-45">Yubi</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=ipkvf0i_hnA",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fipkvf0i_hnA&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dipkvf0i_hnA&image=http%3A%2F%2Fi.ytimg.com%2Fvi%2Fipkvf0i_hnA%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "http://i.ytimg.com/vi/ipkvf0i_hnA/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=7bUGj2d0W5I?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=7bUGj2d0W5I?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/7bUGj2d0W5I/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F7bUGj2d0W5I%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7bUGj2d0W5I&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F7bUGj2d0W5I%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f1ad1d4c5819c431cfea4ba_Dcube_iris_conference.JPG"
+									loading="lazy" alt="video animation company"
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f1ad1d4c5819c431cfea4ba_Dcube_iris_conference-p-800.jpeg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f1ad1d4c5819c431cfea4ba_Dcube_iris_conference-p-1080.jpeg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f1ad1d4c5819c431cfea4ba_Dcube_iris_conference-p-1600.jpeg 1600w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f1ad1d4c5819c431cfea4ba_Dcube_iris_conference.JPG         1918w
+			                    " class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Yubi Yubi Originator" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Iris Conference Animation video</h3>
+								<div class="para">D Cube Analytics</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d7b7d2351f3_Google%20ASA-1-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Gullak App Explainer</h3>
-										<div class="text-block-45">Gullak</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=nZFcW1IvM2Y",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FnZFcW1IvM2Y%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnZFcW1IvM2Y&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FnZFcW1IvM2Y%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/nZFcW1IvM2Y/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=mzk2wi_YLu0?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=mzk2wi_YLu0?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/mzk2wi_YLu0/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fmzk2wi_YLu0%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dmzk2wi_YLu0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fmzk2wi_YLu0%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2cf3be0aade82c9d9546bb_D%20Cube%20Analytics%20-%20Introduction%20to%20Analytics-min.jpg"
+									loading="lazy" alt="corporate branding" class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Gullak Gullak App Explainer" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Intro to Analytics Explainer</h3>
+								<div class="para">D Cube Analytics</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3dfa3e23517b_Pokerbaazi%20-%20New%20Game%20Promo-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">2D Animation video</h3>
-										<div class="text-block-45">Pokerbaazi</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=rRAIoUZ8XnU?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FrRAIoUZ8XnU%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrRAIoUZ8XnU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FrRAIoUZ8XnU%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/rRAIoUZ8XnU/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=5MuiDBvz-cU?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=5MuiDBvz-cU?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/5MuiDBvz-cU/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F5MuiDBvz-cU%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5MuiDBvz-cU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5MuiDBvz-cU%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/6235818b8df0e25d8f063a77_Strata%201-min.jpg"
+									loading="lazy" alt="animated explainer video" class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Pokerbaazi 2D Animation video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Investment Explainer Sales Promotion</h3>
+								<div class="para">Strata</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3da82b235164_Ballebaazi%20-%20Kabbadi%20Intro-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Kabbadi Intro</h3>
-										<div class="text-block-45">Ballebaazi</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=7bUGj2d0W5I?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F7bUGj2d0W5I%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7bUGj2d0W5I&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F7bUGj2d0W5I%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/7bUGj2d0W5I/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=B7kXgavZqI8",
+			                      "originalUrl": "https://www.youtube.com/watch?v=B7kXgavZqI8",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/B7kXgavZqI8/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FB7kXgavZqI8%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DB7kXgavZqI8&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FB7kXgavZqI8%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2cf614837523f8b37aa8fb_Spartan%20Poker%20-%20Promo-min.jpg"
+									loading="lazy" alt="animation video services" class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Ballebaazi Kabbadi Intro" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Promo animation video</h3>
+								<div class="para">Spartan Poker</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d67fd23518c_Healthvector%20-%20Promo-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">2D Animation explainer video</h3>
-										<div class="text-block-45">Health Vector</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=9QBNzhmWz0U?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F9QBNzhmWz0U%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D9QBNzhmWz0U&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F9QBNzhmWz0U%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/9QBNzhmWz0U/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=3awRGEz3gG8?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=3awRGEz3gG8?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/3awRGEz3gG8/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F3awRGEz3gG8%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3awRGEz3gG8&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F3awRGEz3gG8%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2cf567374b6e836602c860_PykUpz%20-%20Jungle%20Ride-min.jpg"
+									loading="lazy" alt="2D Animation explainer " class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Health Vector 2D Animation explainer video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Jungle Ride Promotional Explainer</h3>
+								<div class="para">PykUpz</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d6ec9235178_D%20Cube%20Analytics%20-%20IRIS%20Animation-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Animation explainer video</h3>
-										<div class="text-block-45">D Cube Analytics</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=52scuc_eonM?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F52scuc_eonM%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D52scuc_eonM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F52scuc_eonM%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/52scuc_eonM/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=r8XH9SjjqM0?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=r8XH9SjjqM0?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/r8XH9SjjqM0/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fr8XH9SjjqM0%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dr8XH9SjjqM0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fr8XH9SjjqM0%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2cf474c61165e8fc1f9b3a_Healthvector%20-%20Promo-min.jpg"
+									loading="lazy" alt="2D Animation explainer video" class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="D Cube Analytics Animation explainer video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">2D Animation explainer video</h3>
+								<div class="para">Health Vector</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3dc11c23517e_PykUpz%20-%20Jungle%20Ride-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">2D Animation video</h3>
-										<div class="text-block-45">PykUpz</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=r8XH9SjjqM0?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fr8XH9SjjqM0%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dr8XH9SjjqM0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fr8XH9SjjqM0%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/r8XH9SjjqM0/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=9QBNzhmWz0U?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=9QBNzhmWz0U?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/9QBNzhmWz0U/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F9QBNzhmWz0U%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D9QBNzhmWz0U&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F9QBNzhmWz0U%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2cf3e0f5b9b202d03b3372_D%20Cube%20Analytics%20-%20IRIS%20Animation-min.jpg"
+									loading="lazy" alt="animation video services" class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="PykUpz 2D Animation video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Animation explainer video</h3>
+								<div class="para">D Cube Analytics</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d3d6a2351a9_Spartan%20Poker%20-%20Promo-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Promo animation video</h3>
-										<div class="text-block-45">Spartan Poker</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=3awRGEz3gG8?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F3awRGEz3gG8%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3awRGEz3gG8&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F3awRGEz3gG8%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/3awRGEz3gG8/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=52scuc_eonM?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=52scuc_eonM?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/52scuc_eonM/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F52scuc_eonM%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D52scuc_eonM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F52scuc_eonM%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2cf5417e8fc73eeed491f4_Pokerbaazi%20-%20New%20Game%20Promo-min.jpg"
+									loading="lazy" alt="2d animation studios in mumbai" class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Spartan Poker Promo animation video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">2D Animation video</h3>
+								<div class="para">Pokerbaazi</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d5c3323513a_Dcube_iris_conference.JPG');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Animation video</h3>
-										<div class="text-block-45">D Cube Analytics</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=mzk2wi_YLu0?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fmzk2wi_YLu0%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dmzk2wi_YLu0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fmzk2wi_YLu0%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/mzk2wi_YLu0/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=rRAIoUZ8XnU?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=rRAIoUZ8XnU?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/rRAIoUZ8XnU/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FrRAIoUZ8XnU%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrRAIoUZ8XnU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FrRAIoUZ8XnU%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f2cf39acffac7108eb5d756_CAT%20-%20CAT%20360-min.jpg"
+									loading="lazy" alt="2d animation studios in mumbai" class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="D Cube Analytics Animation video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">2D Animation Video</h3>
+								<div class="para">CAT</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d18d1235192_D%20Cube%20Analytics%20-%20Introduction%20to%20Analytics-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Brand animation video</h3>
-										<div class="text-block-45">D Cube Analytics</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=5MuiDBvz-cU?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F5MuiDBvz-cU%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5MuiDBvz-cU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5MuiDBvz-cU%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/5MuiDBvz-cU/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=atNKGJFCAhM?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=atNKGJFCAhM?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/atNKGJFCAhM/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FatNKGJFCAhM%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DatNKGJFCAhM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FatNKGJFCAhM%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f27a5b08ab458786b4f6c5a_5f199914e525caee1484f0f8_Saath7Connect%20-%20How%20to%20use%20Saath7%20App-min.jpg"
+									loading="lazy" alt="explainer video production services"
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f27a5b08ab458786b4f6c5a_5f199914e525caee1484f0f8_Saath7Connect%20-%20How%20to%20use%20Saath7%20App-min-p-800.jpeg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f27a5b08ab458786b4f6c5a_5f199914e525caee1484f0f8_Saath7Connect%20-%20How%20to%20use%20Saath7%20App-min-p-1080.jpeg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f27a5b08ab458786b4f6c5a_5f199914e525caee1484f0f8_Saath7Connect%20-%20How%20to%20use%20Saath7%20App-min.jpg         1280w
+			                    " class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="D Cube Analytics Brand animation video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">App animation explainer video</h3>
+								<div class="para">Saath7Connect</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3dad8a235132_5f199914e525caee1484f0f8_Saath7Connect%20-%20How%20to%20use%20Saath7%20App-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">App animation explainer video</h3>
-										<div class="text-block-45">Saath7Connect</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=4Rl3Ob_uW9M?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F4Rl3Ob_uW9M%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4Rl3Ob_uW9M&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F4Rl3Ob_uW9M%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/4Rl3Ob_uW9M/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=4Rl3Ob_uW9M?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=4Rl3Ob_uW9M?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/4Rl3Ob_uW9M/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F4Rl3Ob_uW9M%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4Rl3Ob_uW9M&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F4Rl3Ob_uW9M%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639c55f2bde454b10b348b5e_Google%20ASA-1-min.jpg"
+									loading="lazy" alt="animated explainer video"
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639c55f2bde454b10b348b5e_Google%20ASA-1-min-p-500.jpg   500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639c55f2bde454b10b348b5e_Google%20ASA-1-min-p-800.jpg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639c55f2bde454b10b348b5e_Google%20ASA-1-min-p-1080.jpg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639c55f2bde454b10b348b5e_Google%20ASA-1-min.jpg        1324w
+			                    " class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Saath7Connect App animation explainer video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Gullak App Explainer</h3>
+								<div class="para">Gullak</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d16d8235137_5f1997d0866be86ef4b3bd6a_Rummybaazi%20-%20How%20to%20play%20Rummy%20on%20Rummybaazi-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">How to play Rummy Explainer video</h3>
-										<div class="text-block-45">Rummybaazi</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=uHRgILUqdgs?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FuHRgILUqdgs%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DuHRgILUqdgs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FuHRgILUqdgs%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/uHRgILUqdgs/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=nZFcW1IvM2Y",
+			                      "originalUrl": "https://www.youtube.com/watch?v=nZFcW1IvM2Y",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/nZFcW1IvM2Y/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FnZFcW1IvM2Y%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnZFcW1IvM2Y&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FnZFcW1IvM2Y%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e143806237ea74499ef7_about%20butterfly.jpg"
+									loading="lazy" alt="Illustration of a butterfly"
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e143806237ea74499ef7_about%20butterfly-p-500.jpg 500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e143806237ea74499ef7_about%20butterfly-p-800.jpg 800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e143806237ea74499ef7_about%20butterfly.jpg       928w
+			                    " class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Rummybaazi How to play Rummy Explainer video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">About Butterfly Educational</h3>
+								<div class="para">Magic Edtech</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d83b423512d_5f2309f96fcd187de49c5f9f_5eafdbe3153c2844756bb608_vlcsnap-2020-04-07-13h27m39s551-min.png');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Brand Opening Promotion Motion Graphics Video</h3>
-										<div class="text-block-45">Game Theory</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=i76gx6DHJzI?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fi76gx6DHJzI%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Di76gx6DHJzI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fi76gx6DHJzI%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/i76gx6DHJzI/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://youtu.be/VZeoiy9N-q4",
+			                      "originalUrl": "https://youtu.be/VZeoiy9N-q4",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/VZeoiy9N-q4/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FVZeoiy9N-q4%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DVZeoiy9N-q4&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FVZeoiy9N-q4%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af755d2f46e3026fdc7dd_darwin%20box-min.jpg"
+									loading="lazy" alt=""
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af755d2f46e3026fdc7dd_darwin%20box-min-p-500.jpg   500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af755d2f46e3026fdc7dd_darwin%20box-min-p-800.jpg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af755d2f46e3026fdc7dd_darwin%20box-min-p-1080.jpg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af755d2f46e3026fdc7dd_darwin%20box-min.jpg        1324w
+			                    " class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName"
-												value="Game Theory Brand Opening Promotion Motion Graphics Video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Work From Home</h3>
+								<div class="para">Darwin</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d374e2351ff_Bresties-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">Breaties App Explainer</h3>
-										<div class="text-block-45">Bresties</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=BIL8yTWZclE",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FBIL8yTWZclE%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBIL8yTWZclE&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FBIL8yTWZclE%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/BIL8yTWZclE/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=2mpgU4EIgQU",
+			                      "originalUrl": "https://www.youtube.com/watch?v=2mpgU4EIgQU",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/2mpgU4EIgQU/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F2mpgU4EIgQU%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D2mpgU4EIgQU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F2mpgU4EIgQU%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e4e7803e48f2cc20f736_Flow%20Outsourcing%20Advantage%20Feature%20Overview.jpg"
+									loading="lazy" alt=""
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e4e7803e48f2cc20f736_Flow%20Outsourcing%20Advantage%20Feature%20Overview-p-500.jpg   500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e4e7803e48f2cc20f736_Flow%20Outsourcing%20Advantage%20Feature%20Overview-p-800.jpg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e4e7803e48f2cc20f736_Flow%20Outsourcing%20Advantage%20Feature%20Overview-p-1080.jpg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e4e7803e48f2cc20f736_Flow%20Outsourcing%20Advantage%20Feature%20Overview.jpg        1122w
+			                    " class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="Bresties Breaties App Explainer" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">
+									Flow Outsourcing Advantage Feature Overview
+								</h3>
+								<div class="para">Yubi</div>
 							</div>
 						</div>
-					</div>
-					<div role="listitem" class="video-item w-dyn-item">
-						<div data-w-id="a6e62638-5b91-27c1-167a-517bf248e1a5" class="video-container">
-							<a href="#" class="lightbox-link-2 w-inline-block w-lightbox" aria-label="open lightbox"
-								aria-haspopup="dialog">
-								<div style="
-											background-image: url('https://uploads-ssl.webflow.com/63c0fe42c31e3dd7a0234e85/63c0fe42c31e3d1add235172_CAT%20-%20CAT%20360-min.jpg');
-										" class="div-block-76">
-									<div class="div-block-78 black-dissolve" style="opacity: 0">
-										<h3 class="project-name">2D Animation Video</h3>
-										<div class="text-block-45">CAT</div>
-									</div>
-								</div>
-								<script type="application/json" class="w-json">
-										{
-											"items": [
-												{
-													"url": "https://www.youtube.com/watch?v=atNKGJFCAhM?rel=0",
-													"html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FatNKGJFCAhM%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DatNKGJFCAhM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FatNKGJFCAhM%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-													"height": 480,
-													"width": 854,
-													"thumbnailUrl": "https://i.ytimg.com/vi/atNKGJFCAhM/hqdefault.jpg",
-													"type": "video"
-												}
-											],
-											"group": ""
-										}
-									</script>
-							</a>
-							<div data-w-id="3afa5547-db46-6396-8110-e38058a87906" style="display: flex" class="quote-button-wrapper">
-								<div class="ev-button smaller">
-									<div class="quote-button-text">
-										Get Pricing for Similar Videos
-										<span class="icon-text"></span>
-									</div>
-								</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://youtu.be/xnszN0Dx_14",
+			                      "originalUrl": "https://youtu.be/xnszN0Dx_14",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/xnszN0Dx_14/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FxnszN0Dx_14%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DxnszN0Dx_14&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FxnszN0Dx_14%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e44321d8a8af5b96fd2e_Yubi%20-%20Days%20Payable%20Outstanding%20Extension%20Feature%20Overview.jpg"
+									loading="lazy" alt=""
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e44321d8a8af5b96fd2e_Yubi%20-%20Days%20Payable%20Outstanding%20Extension%20Feature%20Overview-p-500.jpg  500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e44321d8a8af5b96fd2e_Yubi%20-%20Days%20Payable%20Outstanding%20Extension%20Feature%20Overview-p-800.jpg  800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e44321d8a8af5b96fd2e_Yubi%20-%20Days%20Payable%20Outstanding%20Extension%20Feature%20Overview.jpg       1060w
+			                    " class="image-abs" />
 							</div>
-							<div class="form-container quote" style="display: none; opacity: 0">
-								<div class="w-embed">
-									<form id="quote_form" class="form-5" name="Quote Form">
-										<div class="email-form-wrapper">
-											<input type="email" class="input-field" name="email" placeholder="Enter your work Email" />
-											<input type="hidden" name="vidName" value="CAT 2D Animation Video" />
-											<input type="submit" value="" data-wait="Please wait..." class="quote-button w-button" />
-											<div class="sm-div">Thank You! We'll share the quote across.</div>
-										</div>
-									</form>
-								</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">
+									Days Payable Outstanding Extension Feature Overview
+								</h3>
+								<div class="para">Yubi</div>
 							</div>
 						</div>
-					</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://youtu.be/a7KreeUO7ik",
+			                      "originalUrl": "https://youtu.be/a7KreeUO7ik",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/a7KreeUO7ik/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fa7KreeUO7ik%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Da7KreeUO7ik&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fa7KreeUO7ik%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e33e44bdf3e748884825_Yubi%20Flow%20increase%20sales%20product%20overview.jpg"
+									loading="lazy" alt="Illustration of Computer with pastel color pallete"
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e33e44bdf3e748884825_Yubi%20Flow%20increase%20sales%20product%20overview-p-500.jpg   500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e33e44bdf3e748884825_Yubi%20Flow%20increase%20sales%20product%20overview-p-800.jpg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e33e44bdf3e748884825_Yubi%20Flow%20increase%20sales%20product%20overview-p-1080.jpg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e33e44bdf3e748884825_Yubi%20Flow%20increase%20sales%20product%20overview.jpg        1082w
+			                    " class="image-abs" />
+							</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Flow Increase Sales Product Overview</h3>
+								<div class="para">Yubi</div>
+							</div>
+						</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://youtu.be/1FjfLC4JsT8",
+			                      "originalUrl": "https://youtu.be/1FjfLC4JsT8",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/1FjfLC4JsT8/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F1FjfLC4JsT8%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1FjfLC4JsT8&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F1FjfLC4JsT8%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e203dbf5a8888f55b554_logistics%20intelgence%20assistence.jpg"
+									loading="lazy" alt="Glass UI with a send button"
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e203dbf5a8888f55b554_logistics%20intelgence%20assistence-p-500.jpg   500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e203dbf5a8888f55b554_logistics%20intelgence%20assistence-p-800.jpg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e203dbf5a8888f55b554_logistics%20intelgence%20assistence-p-1080.jpg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/64b8e203dbf5a8888f55b554_logistics%20intelgence%20assistence.jpg        1093w
+			                    " class="image-abs" />
+							</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">
+									Logistics Intelligence Assistant Product Overview
+								</h3>
+								<div class="para">Shipsy</div>
+							</div>
+						</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://youtu.be/z7qa6k7OjUY",
+			                      "originalUrl": "https://youtu.be/z7qa6k7OjUY",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/z7qa6k7OjUY/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fz7qa6k7OjUY%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dz7qa6k7OjUY&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fz7qa6k7OjUY%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af5600a971f865f72b78c_yubi%20-%20originator-min.jpg"
+									loading="lazy" alt=""
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af5600a971f865f72b78c_yubi%20-%20originator-min-p-500.jpg   500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af5600a971f865f72b78c_yubi%20-%20originator-min-p-800.jpg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af5600a971f865f72b78c_yubi%20-%20originator-min-p-1080.jpg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af5600a971f865f72b78c_yubi%20-%20originator-min.jpg        1324w
+			                    " class="image-abs" />
+							</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Yubi Originator</h3>
+								<div class="para">Yubi</div>
+							</div>
+						</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=ipkvf0i_hnA",
+			                      "originalUrl": "https://www.youtube.com/watch?v=ipkvf0i_hnA",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "http://i.ytimg.com/vi/ipkvf0i_hnA/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fipkvf0i_hnA&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dipkvf0i_hnA&image=http%3A%2F%2Fi.ytimg.com%2Fvi%2Fipkvf0i_hnA%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af66d95df2370c664a738_yubi%20-%20lenders-min.jpg"
+									loading="lazy" alt=""
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af66d95df2370c664a738_yubi%20-%20lenders-min-p-500.jpg   500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af66d95df2370c664a738_yubi%20-%20lenders-min-p-800.jpg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af66d95df2370c664a738_yubi%20-%20lenders-min-p-1080.jpg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af66d95df2370c664a738_yubi%20-%20lenders-min.jpg        1324w
+			                    " class="image-abs" />
+							</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Lenders Animation Film</h3>
+								<div class="para">Yubi</div>
+							</div>
+						</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=V_3WuJFZLI0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=V_3WuJFZLI0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/V_3WuJFZLI0/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FV_3WuJFZLI0%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DV_3WuJFZLI0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FV_3WuJFZLI0%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af6d44ae3264e991ce232_spocto-min.jpg"
+									loading="lazy" alt=""
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af6d44ae3264e991ce232_spocto-min-p-500.jpg   500w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af6d44ae3264e991ce232_spocto-min-p-800.jpg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af6d44ae3264e991ce232_spocto-min-p-1080.jpg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/639af6d44ae3264e991ce232_spocto-min.jpg        1324w
+			                    " class="image-abs" />
+							</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">Introducing Spocto</h3>
+								<div class="para">Yubi</div>
+							</div>
+						</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=BqH6tZyJ-M8",
+			                      "originalUrl": "https://www.youtube.com/watch?v=BqH6tZyJ-M8",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/BqH6tZyJ-M8/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FBqH6tZyJ-M8%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBqH6tZyJ-M8&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FBqH6tZyJ-M8%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
+				</div>
+				<div id="w-node-_03fca334-4235-33de-2fb0-ba8876b47ac3-847ca596" role="listitem" class="video-item w-dyn-item">
+					<a href="#" class="lightbox portfolio w-inline-block w-lightbox" aria-label="open lightbox"
+						aria-haspopup="dialog">
+						<div class="video-card-wrapper">
+							<div class="video-card-image-wrapper">
+								<img
+									src="https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f27a5ce445a0df2ed74a4d0_5f1997d0866be86ef4b3bd6a_Rummybaazi%20-%20How%20to%20play%20Rummy%20on%20Rummybaazi-min.jpg"
+									loading="lazy" alt=""
+									sizes="(max-width: 767px) 90vw, (max-width: 991px) 44vw, (max-width: 1279px) 28vw, 29vw" srcset="
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f27a5ce445a0df2ed74a4d0_5f1997d0866be86ef4b3bd6a_Rummybaazi%20-%20How%20to%20play%20Rummy%20on%20Rummybaazi-min-p-800.jpeg   800w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f27a5ce445a0df2ed74a4d0_5f1997d0866be86ef4b3bd6a_Rummybaazi%20-%20How%20to%20play%20Rummy%20on%20Rummybaazi-min-p-1080.jpeg 1080w,
+			                      https://assets-global.website-files.com/5eafdb0a9675c118b225dc7e/5f27a5ce445a0df2ed74a4d0_5f1997d0866be86ef4b3bd6a_Rummybaazi%20-%20How%20to%20play%20Rummy%20on%20Rummybaazi-min.jpg         1280w
+			                    " class="image-abs" />
+							</div>
+							<div class="video-details-wrapper">
+								<h3 class="h4">How to play Rummy Explainer video</h3>
+								<div class="para">Rummybaazi</div>
+							</div>
+						</div>
+						<script type="application/json" class="w-json">
+			                {
+			                  "items": [
+			                    {
+			                      "url": "https://www.youtube.com/watch?v=uHRgILUqdgs?rel=0",
+			                      "originalUrl": "https://www.youtube.com/watch?v=uHRgILUqdgs?rel=0",
+			                      "width": 854,
+			                      "height": 480,
+			                      "thumbnailUrl": "https://i.ytimg.com/vi/uHRgILUqdgs/hqdefault.jpg",
+			                      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FuHRgILUqdgs%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DuHRgILUqdgs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FuHRgILUqdgs%2Fhqdefault.jpg&args=rel%3D0&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+			                      "type": "video"
+			                    }
+			                  ],
+			                  "group": ""
+			                }
+			              </script>
+					</a>
 				</div>
 			</div>
 		</div>
